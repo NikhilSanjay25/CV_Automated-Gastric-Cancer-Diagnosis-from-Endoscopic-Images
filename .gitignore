@@ -1,0 +1,20 @@
+# Environments and dependencies (recreate with requirements.txt / npm install)
+.venv/
+deck/node_modules/
+
+# Large or regenerable artefacts
+# data/: raw downloads + 224px caches (~25 GB), recreate with scripts/download_data.py + src/prepare_data.py
+# checkpoints/: trained weights (~2.6 GB), recreate with run_all.sh
+data/
+checkpoints/
+logs/
+results/kvasir_proposed_v1.json
+
+# Local TLS bundle for the Kvasir download (rebuilt by scripts/download_data.py)
+.certs/
+
+# OS / Office lock files / Python caches
+.DS_Store
+~$*
+__pycache__/
+*.pyc

@@ -1,0 +1,80 @@
+{
+  "run": "gastrovision_alexnet",
+  "ds": "gastrovision",
+  "model": "alexnet",
+  "name": "AlexNet",
+  "loss": "ce",
+  "epochs": 4,
+  "train_time_s": 209.0068221092224,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.6868189084668492,
+      "train_acc": 0.49236918604651164,
+      "val_loss": 1.247641682624817,
+      "val_acc": 0.6232006773920407,
+      "val_f1": 0.39720788400332224,
+      "time": 56.17999315261841
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2207928726146386,
+      "train_acc": 0.6273619186046512,
+      "val_loss": 1.0946338176727295,
+      "val_acc": 0.6316680779000847,
+      "val_f1": 0.3842402699699068,
+      "time": 51.45526671409607
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9845246381537859,
+      "train_acc": 0.6905886627906976,
+      "val_loss": 0.926949679851532,
+      "val_acc": 0.7011007620660458,
+      "val_f1": 0.4915232940108282,
+      "time": 51.35381603240967
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.8395216198161591,
+      "train_acc": 0.723655523255814,
+      "val_loss": 0.9046671390533447,
+      "val_acc": 0.7104149026248942,
+      "val_f1": 0.4926937635533214,
+      "time": 49.9464271068573
+    }
+  ],
+  "test": {
+    "acc": 0.6858594411515665,
+    "bal_acc": 0.48790600774662796,
+    "precision": 0.5292121093859526,
+    "recall": 0.48790600774662796,
+    "f1": 0.4807935018419977,
+    "specificity": 0.9825278916707834,
+    "mcc": 0.6466936358617454,
+    "kappa": 0.6457714185926935,
+    "auc": 0.9571096236415487
+  },
+  "classes": [
+    "Accessory tools",
+    "Barrett's esophagus",
+    "Blood in lumen",
+    "Cecum",
+    "Colon polyps",
+    "Colorectal cancer",
+    "Duodenal bulb",
+    "Dyed-lifted-polyps",
+    "Dyed-resection-margins",
+    "Esophagitis",
+    "Gastric polyps",
+    "Gastroesophageal_junction_normal z-line",
+    "Ileocecal valve",
+    "Normal esophagus",
+    "Normal mucosa and vascular pattern in the large bowel",
+    "Normal stomach",
+    "Pylorus",
+    "Resected polyps",
+    "Retroflex rectum",
+    "Small bowel_terminal ileum"
+  ]
+}

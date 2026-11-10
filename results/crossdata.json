@@ -1,0 +1,98 @@
+{
+  "cvc": {
+    "_n": 612,
+    "_n_total": 612,
+    "alexnet": {
+      "polyp_recall": 0.6977124183006536,
+      "abnormal_recall": 0.9199346405228758
+    },
+    "vgg16": {
+      "polyp_recall": 0.8562091503267973,
+      "abnormal_recall": 0.9738562091503268
+    },
+    "googlenet": {
+      "polyp_recall": 0.7712418300653595,
+      "abnormal_recall": 0.9101307189542484
+    },
+    "resnet50": {
+      "polyp_recall": 0.7875816993464052,
+      "abnormal_recall": 0.9281045751633987
+    },
+    "densenet121": {
+      "polyp_recall": 0.7467320261437909,
+      "abnormal_recall": 0.9166666666666666
+    },
+    "mobilenetv2": {
+      "polyp_recall": 0.7434640522875817,
+      "abnormal_recall": 0.9264705882352942
+    },
+    "efficientnetb0": {
+      "polyp_recall": 0.8398692810457516,
+      "abnormal_recall": 0.9771241830065359
+    },
+    "vitb16": {
+      "polyp_recall": 0.9133986928104575,
+      "abnormal_recall": 0.9656862745098039
+    },
+    "mobilenetv2_focal": {
+      "polyp_recall": 0.7516339869281046,
+      "abnormal_recall": 0.9558823529411765
+    },
+    "resnet50_focal": {
+      "polyp_recall": 0.7941176470588235,
+      "abnormal_recall": 0.9493464052287581
+    },
+    "proposed": {
+      "polyp_recall": 0.8006535947712419,
+      "abnormal_recall": 0.934640522875817
+    }
+  },
+  "kvasirseg": {
+    "_n": 991,
+    "_n_total": 1000,
+    "alexnet": {
+      "polyp_recall": 0.8819374369323916,
+      "abnormal_recall": 0.9525731584258325
+    },
+    "vgg16": {
+      "polyp_recall": 0.963673057517659,
+      "abnormal_recall": 0.9868819374369324
+    },
+    "googlenet": {
+      "polyp_recall": 0.9626639757820383,
+      "abnormal_recall": 0.9858728557013118
+    },
+    "resnet50": {
+      "polyp_recall": 0.9737638748738647,
+      "abnormal_recall": 0.9919273461150353
+    },
+    "densenet121": {
+      "polyp_recall": 0.9515640766902119,
+      "abnormal_recall": 0.9818365287588294
+    },
+    "mobilenetv2": {
+      "polyp_recall": 0.9656912209889001,
+      "abnormal_recall": 0.9868819374369324
+    },
+    "efficientnetb0": {
+      "polyp_recall": 0.9737638748738647,
+      "abnormal_recall": 0.9868819374369324
+    },
+    "vitb16": {
+      "polyp_recall": 0.9656912209889001,
+      "abnormal_recall": 0.9969727547931383
+    },
+    "mobilenetv2_focal": {
+      "polyp_recall": 0.9626639757820383,
+      "abnormal_recall": 0.9899091826437941
+    },
+    "resnet50_focal": {
+      "polyp_recall": 0.9697275479313825,
+      "abnormal_recall": 0.9909182643794148
+    },
+    "proposed": {
+      "polyp_recall": 0.9848637739656912,
+      "abnormal_recall": 0.9939455095862765
+    }
+  }
+}

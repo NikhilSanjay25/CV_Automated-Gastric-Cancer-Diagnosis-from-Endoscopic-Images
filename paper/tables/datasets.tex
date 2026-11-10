@@ -1,0 +1,10 @@
+\begin{table*}[t]
+\caption{Databases used in this study (all public). Imbalance = largest/smallest class size.}
+\label{tab:datasets}\centering
+\begin{tabular}{lrrrll}\toprule
+Database & Images & Classes & Imbalance & Train / Val / Test & Role in this study\\\midrule
+Kvasir v2 & 8,000 & 8 & 1.0 & 5600 / 1200 / 1200 & 8-class train/test (primary) \\
+GastroVision & 7,872 & 20 & 22.6 & 5510 / 1181 / 1181 & multi-class train/test (upper+lower GI) \\
+Kvasir-SEG & 1,000 & 1 (+mask) & -- & test only & external polyp test + localisation \\
+CVC-ClinicDB & 612 & 1 (+mask) & -- & test only & external polyp test + localisation \\
+\bottomrule\end{tabular}\end{table*}

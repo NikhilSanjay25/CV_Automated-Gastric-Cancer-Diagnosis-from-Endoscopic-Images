@@ -1,0 +1,19 @@
+\begin{table}[t]
+\caption{Cross-database generalisation of Kvasir-trained models on unseen polyp databases: sensitivity (\%) for the
+\emph{polyp} class and for \emph{any abnormal} class. Kvasir-SEG images duplicated in the Kvasir training split were removed.}
+\label{tab:cross}\centering\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccc}\toprule
+ & \multicolumn{2}{c}{Kvasir-SEG ($n$=991)} & \multicolumn{2}{c}{CVC-ClinicDB ($n$=612)}\\
+Model & Polyp & Abnormal & Polyp & Abnormal\\\midrule
+AlexNet & 88.2 & 95.3 & 69.8 & 92.0\\
+VGG-16 & 96.4 & 98.7 & 85.6 & 97.4\\
+GoogLeNet & 96.3 & 98.6 & 77.1 & 91.0\\
+ResNet-50 & 97.4 & 99.2 & 78.8 & 92.8\\
+DenseNet-121 & 95.2 & 98.2 & 74.7 & 91.7\\
+MobileNetV2 & 96.6 & 98.7 & 74.3 & 92.6\\
+EfficientNet-B0 & 97.4 & 98.7 & 84.0 & 97.7\\
+ViT-B/16 & 96.6 & 99.7 & 91.3 & 96.6\\
+MobileNetV2 (focal) & 96.3 & 99.0 & 75.2 & 95.6\\
+ResNet-50 (focal) & 97.0 & 99.1 & 79.4 & 94.9\\
+\textbf{Proposed cascade} & 98.5 & 99.4 & 80.1 & 93.5\\
+\bottomrule\end{tabular}\end{table}

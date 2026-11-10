@@ -1,0 +1,12 @@
+This paper presented a cascaded spatio-temporal framework for GI abnormality detection in endoscopy that combines a
+MobileNetV2 gate, a ResNet-50 feature extractor and a Bi-LSTM with temporal attention, trained with focal loss and
+explained with Grad-CAM. It was benchmarked against a classical SIFT-BoVW+SVM pipeline and eight deep baselines on
+four public databases with classification, efficiency and explainability evaluators. On clean still images the
+proposed system comes within \Rgapbest\ points of the best single-frame network (\Rpropacc\% accuracy and \Rpropmcc\%
+MCC on Kvasir v2, versus \Rbestbaseacc\% for \Rbestbase). Its
+advantage appears when frames are degraded: under transient motion blur, defocus, specular flashes or occlusion it
+keeps \Rrobtransient\% accuracy, whereas single-frame baselines fall to \Rrobbestbaseacc\% or less. A temporally
+smoothed gate retains $\ge$99\% of abnormal frames while skipping the expensive stages for normal ones, which cuts
+the average compute per frame and pays off increasingly as the share of normal frames grows, as in real examinations. Future work will
+validate the system on real endoscopic video, add repeated-seed confidence intervals, and extend the label set to
+rare gastric pathologies such as early gastric cancer and ulcers.

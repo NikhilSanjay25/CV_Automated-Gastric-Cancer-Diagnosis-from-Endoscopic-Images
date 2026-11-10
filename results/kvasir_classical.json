@@ -1,0 +1,28 @@
+{
+  "run": "kvasir_classical",
+  "ds": "kvasir",
+  "model": "classical",
+  "name": "SIFT-BoVW+SVM",
+  "train_time_s": 74.15145707130432,
+  "test": {
+    "acc": 0.7725,
+    "bal_acc": 0.7725,
+    "precision": 0.7719767487325795,
+    "recall": 0.7725,
+    "f1": 0.7717856425024875,
+    "specificity": 0.9675,
+    "mcc": 0.7401263021695303,
+    "kappa": 0.74,
+    "auc": 0.9740507936507936
+  },
+  "classes": [
+    "dyed-lifted-polyps",
+    "dyed-resection-margins",
+    "esophagitis",
+    "normal-cecum",
+    "normal-pylorus",
+    "normal-z-line",
+    "polyps",
+    "ulcerative-colitis"
+  ]
+}

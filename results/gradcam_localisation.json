@@ -1,0 +1,62 @@
+{
+  "kvasirseg": {
+    "ResNet-50 (CE)": {
+      "pointing_game": 0.8675,
+      "energy_in_mask": 0.45771802627947183,
+      "iou": 0.42673297610279065,
+      "mask_area": 0.14452193279655615,
+      "mean_p_polyp": 0.9619399905204773
+    },
+    "ResNet-50 (focal, proposed Stage 2)": {
+      "pointing_game": 0.8125,
+      "energy_in_mask": 0.42220352579606696,
+      "iou": 0.38100839940135023,
+      "mask_area": 0.14452193279655615,
+      "mean_p_polyp": 0.8802623152732849
+    },
+    "DenseNet-121 (CE)": {
+      "pointing_game": 0.8175,
+      "energy_in_mask": 0.31721074630040674,
+      "iou": 0.4096927696283465,
+      "mask_area": 0.14452193279655615,
+      "mean_p_polyp": 0.9260975122451782
+    },
+    "MobileNetV2 (focal, Stage 1)": {
+      "pointing_game": 0.7,
+      "energy_in_mask": 0.38911713313078505,
+      "iou": 0.40711823720890883,
+      "mask_area": 0.14452193279655615,
+      "mean_p_polyp": 0.8736834526062012
+    }
+  },
+  "cvc": {
+    "ResNet-50 (CE)": {
+      "pointing_game": 0.6775,
+      "energy_in_mask": 0.3675823880050552,
+      "iou": 0.33620226093040806,
+      "mask_area": 0.08542535275829082,
+      "mean_p_polyp": 0.7503869533538818
+    },
+    "ResNet-50 (focal, proposed Stage 2)": {
+      "pointing_game": 0.65,
+      "energy_in_mask": 0.34112710773471916,
+      "iou": 0.3139077332573548,
+      "mask_area": 0.08542535275829082,
+      "mean_p_polyp": 0.6618082523345947
+    },
+    "DenseNet-121 (CE)": {
+      "pointing_game": 0.58,
+      "energy_in_mask": 0.24437170836987207,
+      "iou": 0.31098025810241614,
+      "mask_area": 0.08542535275829082,
+      "mean_p_polyp": 0.7213720083236694
+    },
+    "MobileNetV2 (focal, Stage 1)": {
+      "pointing_game": 0.535,
+      "energy_in_mask": 0.2660540376754216,
+      "iou": 0.2978092125311407,
+      "mask_area": 0.08542535275829082,
+      "mean_p_polyp": 0.6309406161308289
+    }
+  }
+}

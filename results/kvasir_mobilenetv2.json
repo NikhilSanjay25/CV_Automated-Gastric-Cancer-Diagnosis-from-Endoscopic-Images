@@ -1,0 +1,77 @@
+{
+  "run": "kvasir_mobilenetv2",
+  "ds": "kvasir",
+  "model": "mobilenetv2",
+  "name": "MobileNetV2",
+  "loss": "ce",
+  "epochs": 5,
+  "train_time_s": 522.3386981487274,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.023418813432966,
+      "train_acc": 0.6571428571428571,
+      "val_loss": 0.3450416624546051,
+      "val_acc": 0.8725,
+      "val_f1": 0.8704709182703134,
+      "time": 97.11299872398376
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.29306303777865,
+      "train_acc": 0.8830357142857143,
+      "val_loss": 0.2799488306045532,
+      "val_acc": 0.89,
+      "val_f1": 0.8886156476379616,
+      "time": 105.48954606056213
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.23073111023221698,
+      "train_acc": 0.9135714285714286,
+      "val_loss": 0.252267062664032,
+      "val_acc": 0.9025,
+      "val_f1": 0.902211494805587,
+      "time": 108.31176829338074
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.20630877430949893,
+      "train_acc": 0.9169642857142857,
+      "val_loss": 0.24681225419044495,
+      "val_acc": 0.9016666666666666,
+      "val_f1": 0.9011269536530631,
+      "time": 104.20511794090271
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.19610940300992558,
+      "train_acc": 0.92125,
+      "val_loss": 0.23429283499717712,
+      "val_acc": 0.9075,
+      "val_f1": 0.9072524598309251,
+      "time": 106.88773918151855
+    }
+  ],
+  "test": {
+    "acc": 0.9058333333333334,
+    "bal_acc": 0.9058333333333333,
+    "precision": 0.9075808629523294,
+    "recall": 0.9058333333333333,
+    "f1": 0.9055992116656986,
+    "specificity": 0.986547619047619,
+    "mcc": 0.8927047937316733,
+    "kappa": 0.8923809523809524,
+    "auc": 0.9930238095238095
+  },
+  "classes": [
+    "dyed-lifted-polyps",
+    "dyed-resection-margins",
+    "esophagitis",
+    "normal-cecum",
+    "normal-pylorus",
+    "normal-z-line",
+    "polyps",
+    "ulcerative-colitis"
+  ]
+}

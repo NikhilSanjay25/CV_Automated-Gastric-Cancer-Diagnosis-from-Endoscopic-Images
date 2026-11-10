@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Kvasir test accuracy (\%) when the \emph{current} frame is hit by a transient artifact (columns 2--5),
+and on a random artifact stream ($p=0.3$ per frame). Single-frame models see only the current frame; the proposed
+system additionally sees the four preceding frames.}
+\label{tab:robust}\centering
+\begin{tabular}{lccccccc}\toprule
+Model & Clean & Motion blur & Defocus & Specular flash & Noise/occlusion & Stream & Mean art.\\\midrule
+AlexNet & 87.6 & 75.9 & 64.2 & 39.2 & 42.3 & 79.2 & 55.4\\
+VGG-16 & 91.0 & 67.3 & 65.9 & 43.0 & 29.6 & 79.8 & 51.5\\
+GoogLeNet & 89.9 & 52.6 & 63.3 & 46.8 & 40.8 & 80.1 & 50.9\\
+ResNet-50 & 91.9 & 69.7 & 55.2 & 47.2 & 44.5 & 83.2 & 54.2\\
+DenseNet-121 & 92.8 & 64.4 & 50.7 & 47.5 & 47.8 & 82.4 & 52.6\\
+MobileNetV2 & 90.6 & 67.8 & 46.4 & 43.2 & 22.9 & 78.0 & 45.1\\
+EfficientNet-B0 & 91.6 & 72.9 & 67.2 & 48.5 & 11.1 & 81.2 & 49.9\\
+ViT-B/16 & 93.6 & 84.1 & 74.5 & 72.4 & 65.2 & 88.2 & 74.1\\
+\midrule\textbf{Proposed} & \textbf{91.9} & \textbf{91.3} & \textbf{92.1} & \textbf{91.2} & \textbf{92.3} & \textbf{91.2} & \textbf{91.8}\\
+\bottomrule\end{tabular}\end{table*}

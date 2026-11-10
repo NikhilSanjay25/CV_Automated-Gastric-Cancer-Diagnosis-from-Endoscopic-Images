@@ -1,0 +1,12 @@
+\begin{table}[t]
+\caption{Quantitative Grad-CAM localisation against expert polyp masks (400 images per database): pointing-game
+hit rate (PG), fraction of CAM energy inside the mask (EiM) and IoU of the CAM thresholded at 0.5.}
+\label{tab:gradcam}\centering\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{lcccccc}\toprule
+ & \multicolumn{3}{c}{Kvasir-SEG} & \multicolumn{3}{c}{CVC-ClinicDB}\\
+Model & PG & EiM & IoU & PG & EiM & IoU\\\midrule
+ResNet-50 (CE) & 86.8 & 45.8 & 42.7 & 67.8 & 36.8 & 33.6\\
+ResNet-50 (focal, proposed Stage 2) & 81.2 & 42.2 & 38.1 & 65.0 & 34.1 & 31.4\\
+DenseNet-121 (CE) & 81.8 & 31.7 & 41.0 & 58.0 & 24.4 & 31.1\\
+MobileNetV2 (focal, Stage 1) & 70.0 & 38.9 & 40.7 & 53.5 & 26.6 & 29.8\\
+\bottomrule\end{tabular}\end{table}

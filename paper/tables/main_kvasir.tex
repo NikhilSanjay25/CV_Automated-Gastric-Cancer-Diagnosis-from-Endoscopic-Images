@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{Baseline comparison on the Kvasir v2 test set (1,200 images, 8 classes). Precision, recall, F1 and
+specificity are macro-averaged; AUC is macro one-vs-rest. Best value per column in bold.
+$^\dagger$Expected per-frame cost of the cascade given the measured gate pass rate (GPU: Apple M5, FP16; CPU: FP32).}
+\label{tab:main}\centering\setlength{\tabcolsep}{4.2pt}
+\begin{tabular}{lcccccccc|cccc}\toprule
+ & \multicolumn{8}{c|}{Classification (\%)} & & & \multicolumn{2}{c}{FPS (batch 1)}\\
+Model & Acc. & Prec. & Rec. & F1 & Spec. & MCC & $\kappa$ & AUC & Params (M) & GMACs & GPU & CPU\\\midrule
+SIFT-BoVW+SVM & 77.25 & 77.20 & 77.25 & 77.18 & 96.75 & 74.01 & 74.00 & 97.41 & -- & -- & -- & -- \\
+AlexNet & 87.58 & 88.26 & 87.58 & 87.44 & 98.23 & 85.95 & 85.81 & 98.92 & 57.0 & 0.71 & 195 & 148.5 \\
+VGG-16 & 91.00 & 91.04 & 91.00 & 90.92 & 98.71 & 89.74 & 89.71 & 99.34 & 134.3 & 15.47 & 31 & 13.3 \\
+GoogLeNet & 89.92 & 90.10 & 89.92 & 89.88 & 98.56 & 88.51 & 88.48 & 99.30 & 5.6 & 1.50 & 105 & 65.1 \\
+ResNet-50 & 91.92 & 92.08 & 91.92 & 91.89 & 98.85 & 90.79 & 90.76 & 99.57 & 23.5 & 4.09 & 54 & 37.0 \\
+DenseNet-121 & 92.75 & 92.87 & 92.75 & 92.73 & 98.96 & 91.74 & 91.71 & 99.55 & 7.0 & 2.83 & 40 & 27.2 \\
+MobileNetV2 & 90.58 & 90.76 & 90.58 & 90.56 & 98.65 & 89.27 & 89.24 & 99.30 & 2.2 & 0.30 & 127 & 19.8 \\
+EfficientNet-B0 & 91.58 & 91.61 & 91.58 & 91.57 & 98.80 & 90.39 & 90.38 & 99.38 & 4.0 & 0.38 & 113 & 3.2 \\
+ViT-B/16 & \textbf{93.58} & \textbf{93.87} & \textbf{93.58} & \textbf{93.56} & \textbf{99.08} & \textbf{92.72} & \textbf{92.67} & \textbf{99.64} & 85.8 & 11.27 & 51 & 12.5 \\\midrule
+\textbf{Proposed cascade} & 91.92 & 92.04 & 91.92 & 91.89 & 98.85 & 90.79 & 90.76 & 99.19 & 28.4 & 3.35$^\dagger$ & 54$^\dagger$ & 13.9$^\dagger$ \\
+\bottomrule\end{tabular}\end{table*}

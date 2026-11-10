@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\caption{Generalisation of the comparison to GastroVision (test split). B-Acc. = balanced accuracy
+(mean per-class recall), which exposes failures on rare classes that plain accuracy hides.}
+\label{tab:multidb}\centering
+\begin{tabular}{lcccc}\toprule
+ & \multicolumn{4}{c}{GastroVision (20 classes)}\\
+Model & Acc. & B-Acc. & F1 & MCC\\\midrule
+SIFT-BoVW+SVM & 64.94 & 42.19 & 41.86 & 60.40 \\
+AlexNet & 68.59 & 48.79 & 48.08 & 64.67 \\
+VGG-16 & 74.85 & 53.50 & 54.73 & 71.67 \\
+GoogLeNet & 76.29 & 56.35 & 57.28 & 73.39 \\
+ResNet-50 & 80.44 & 64.99 & 66.64 & 78.09 \\
+DenseNet-121 & 80.36 & 60.69 & 62.50 & 77.94 \\
+MobileNetV2 & 75.28 & 56.32 & 57.14 & 72.18 \\
+EfficientNet-B0 & 78.66 & 61.01 & 61.27 & 76.05 \\
+ViT-B/16 & \textbf{82.81} & 66.29 & \textbf{67.99} & \textbf{80.73} \\\midrule
+\textbf{Proposed cascade} & 78.15 & \textbf{67.55} & 67.63 & 75.63 \\
+\bottomrule\end{tabular}\end{table*}

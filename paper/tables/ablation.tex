@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Ablation of the proposed components. ``Artifact stream'': every frame of the 5-frame window is
+independently corrupted with probability 0.3.}
+\label{tab:ablation}\centering\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}\toprule
+ & \multicolumn{3}{c}{Clean} & \multicolumn{2}{c}{Artifact stream}\\
+Configuration & Acc. & F1 & MCC & Acc. & MCC\\\midrule
+\multicolumn{6}{l}{\textit{Kvasir v2}}\\
+\quad ResNet-50 (CE), single frame & 91.92 & 91.89 & 90.79 & 83.25 & 80.97\\
+\quad ResNet-50 (focal), single frame & 91.42 & 91.35 & 90.27 & 81.83 & 79.34\\
+\quad + temporal mean pooling & 92.33 & 92.31 & 91.25 & 91.83 & 90.69\\
+\quad + Bi-LSTM (no gate) & 91.92 & 91.89 & 90.79 & 91.17 & 89.93\\
+\quad + gate on current frame only & 91.83 & 91.81 & 90.69 & 90.42 & 89.07\\
+\quad Proposed cascade & 91.92 & 91.89 & 90.79 & 91.17 & 89.93\\
+\multicolumn{6}{l}{\textit{GastroVision}}\\
+\quad ResNet-50 (CE), single frame & 80.44 & 66.64 & 78.09 & 71.89 & 68.36\\
+\quad ResNet-50 (focal), single frame & 77.82 & 66.95 & 75.40 & 69.01 & 65.38\\
+\quad + temporal mean pooling & 80.02 & 69.99 & 77.79 & 81.03 & 78.81\\
+\quad + Bi-LSTM (no gate) & 78.32 & 67.46 & 75.79 & 79.76 & 77.35\\
+\quad + gate on current frame only & 77.39 & 66.95 & 74.76 & 78.66 & 76.12\\
+\quad Proposed cascade & 78.15 & 67.63 & 75.63 & 79.59 & 77.15\\
+\bottomrule\end{tabular}\end{table}
